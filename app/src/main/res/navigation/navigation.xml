@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startGameFragment">
+
+    <fragment
+        android:id="@+id/startGameFragment"
+        android:name="com.bignerdranch.android.bullsandcowsapp.start.StartGameFragment"
+        android:label="fragment_start_game"
+        tools:layout="@layout/fragment_start_game" >
+        <action
+            android:id="@+id/action_startGameFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_startGameFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.bignerdranch.android.bullsandcowsapp.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_endGameFragment"
+            app:destination="@id/endGameFragment"
+            app:popUpTo="@id/startGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endGameFragment"
+        android:name="com.bignerdranch.android.bullsandcowsapp.EndGameFragment"
+        android:label="fragment_end_game"
+        tools:layout="@layout/fragment_end_game" >
+        <action
+            android:id="@+id/action_endGameFragment_to_startGameFragment"
+            app:destination="@id/startGameFragment"
+            app:popUpTo="@id/startGameFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_endGameFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/startGameFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.bignerdranch.android.bullsandcowsapp.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+</navigation>

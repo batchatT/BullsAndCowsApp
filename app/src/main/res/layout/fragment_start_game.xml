@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Yellow"
+        tools:context=".start.StartGameFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="408dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bulls_and_cows"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="200dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/start_button"
+            android:text="@string/play"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/rules"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/border_button"
+            android:text="@string/rules"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:background="@drawable/border_button"
+            android:text="@string/settings"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

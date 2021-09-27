@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BullsAndCowsApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Yellow</item>
+        <item name="colorPrimaryDark">@color/Yellow</item>
+        <item name="colorAccent">@color/Yellow</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

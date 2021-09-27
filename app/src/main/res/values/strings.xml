@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BullsAndCowsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">Play!</string>
+    <string name="rules">Rules</string>
+    <string name="play_again">Play again!</string>
+    <string name="menu">Menu!</string>
+    <string name="score">Your score:</string>
+    <string name="first_rule">The goal of the game is to guess a 4-digit number in the least number of moves.
+    Numbers in a guess cannot be repeated.
+    One move is one suggested version of the secret number.</string>
+    <string name="second_rulse">One move is one 4-digit number and the number of bulls and cows.
+     Cow is a number that is in the hidden number.
+     Bull is a number that is in a hidden number and which stands in its place.</string>
+    <string name="settings">Settings</string>
+    <string name="difficult">Difficulty level</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+    <string name="insane">Insane</string>
+    <string name="confirm">Confirm</string>
+    <string name="normal_text">Set 15 attempts</string>
+    <string name="hard_text">Set 10 attempts</string>
+    <string name="insane_text">Set 5 attempts</string>
+</resources>
